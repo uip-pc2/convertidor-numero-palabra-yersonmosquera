@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane prefHeight="394.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Label layoutX="36.0" layoutY="36.0" prefHeight="51.0" prefWidth="488.0" text="CONVERTIDOR DE NUMEROS A LETRAS" textAlignment="JUSTIFY" textFill="#e08e16" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <HBox layoutX="39.0" layoutY="284.0" prefHeight="88.0" prefWidth="482.0" spacing="25.0">
+         <children>
+            <Button fx:id="bt_convertir" mnemonicParsing="false" onAction="#evento" prefHeight="38.0" prefWidth="180.0" text="Convertir" textFill="#0b3675c9">
+               <font>
+                  <Font name="System Italic" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="bt_salir" mnemonicParsing="false" onAction="#evento" prefHeight="38.0" prefWidth="177.0" text="Salir" textFill="#0b3675c9">
+               <font>
+                  <Font name="System Italic" size="19.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="46.0" layoutY="107.0" prefHeight="82.0" prefWidth="453.0" spacing="5.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="86.0" layoutY="158.0" text="Ingrese Numero:" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_numero" layoutX="149.0" layoutY="195.0" prefHeight="25.0" prefWidth="209.0" promptText="Numero a convertir" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </HBox>
+      <TextArea  fx:id="tx_estado" layoutX="46.0" editable="false" layoutY="179.0" prefHeight="95.0" prefWidth="453.0" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

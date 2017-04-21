@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Resultado">
+   <children>
+      <Label layoutX="199.0" layoutY="29.0" text="RESULTADO" textFill="#cd6307">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font></Label>
+      <Button fx:id="bt_atras" layoutX="62.0" layoutY="314.0" mnemonicParsing="false" onAction="#evento" text="Atras">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font></Button>
+      <VBox layoutX="67.0" layoutY="83.0" prefHeight="200.0" prefWidth="472.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Label fx:id="lb_titulo" text="NUMERO INGRESADO" />
+                  <TextField fx:id="txt_num" editable="false" promptText="numero a convertir">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></TextField>
+               </children>
+               <padding>
+                  <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+               </padding>
+            </HBox>
+            <TextArea fx:id="text_resultado" editable="false" prefHeight="173.0" prefWidth="472.0" promptText="Resuldado de la conversion">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font></TextArea>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
